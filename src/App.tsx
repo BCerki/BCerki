@@ -8,25 +8,30 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./Components/About";
 import Books from "./Components/Books";
 import Contact from "./Components/Contact";
+import Collage from "./Components/Collage";
 
 function App() {
   return (
     <Router>
       <div>
-        <nav className="nav-bar">
-          <ul>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/books">Books</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+        <header>
+          <div className="nav-bar-name">Brianna Cerkiewicz</div>
+          <nav className="nav-bar">
+            <ul>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/books">Books</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
         <Banner />
+        <Collage />
         <Switch>
           <Route path="/about">
             <About />
