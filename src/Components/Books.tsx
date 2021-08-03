@@ -1,7 +1,8 @@
+import NavBar from "./NavBar";
 const Books: React.FC = () => {
   return (
     <div>
-      <h1>Books</h1>
+      <NavBar />
       <div className="book-grid">
         <div className="book">
           <div className="cover-div">

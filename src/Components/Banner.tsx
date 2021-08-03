@@ -10,12 +10,12 @@ const Banner: React.FC = () => {
     <div className="image-container">
       {/* <img className="banner-image" src="Images/IMG_1024 Copy.jpg" /> */}
       <img className={bannerClass} src="Images/Banner-high res-3.jpg" />
-      <div className="centered">
+      {/* <div className="centered">
         <div>
           <span className="brianna">{location.pathname.replace("/", "")}</span>
-        </div>
-        {/* <div className="author">Author</div> */}
-      </div>
+        </div> */}
+      {/* <div className="author">Author</div> */}
+      {/* </div> */}
     </div>
   );
 };
