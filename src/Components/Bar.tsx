@@ -1,16 +1,26 @@
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
 const Bar: React.FC = () => {
+  const location = useLocation();
+  const linkClass =
+    location.pathname === "/" ? "main-nav-bar" : "interior-nav-bar";
   return (
     <nav className="nav-bar">
       <ul>
         <li>
-          <Link to="/about">About</Link>
+          <Link className={linkClass} to="/about">
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/books">Books</Link>
+          <Link className={linkClass} to="/books">
+            Books
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link className={linkClass} to="/contact">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

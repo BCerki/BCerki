@@ -39,8 +39,12 @@ code {
   transform: translate(-50%, -50%); */
 }
 
-a {
+a.main-nav-bar {
   color: white;
+  text-transform: uppercase;
+}
+a.interior-nav-bar {
+  color: black;
   text-transform: uppercase;
 }
 

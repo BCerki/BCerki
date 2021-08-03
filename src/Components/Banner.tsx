@@ -2,8 +2,9 @@ import { useLocation } from "react-router";
 const Banner: React.FC = () => {
   const location = useLocation();
 
-  const bannerClass =
-    location.pathname === "/" ? "banner-image" : "banner-image-opaque";
+  // const bannerClass =
+  //   location.pathname === "/" ? "banner-image" : "banner-image-opaque";
+  const bannerClass = "banner-image";
 
   return (
     <div className="image-container">
