@@ -13,42 +13,20 @@ import Collage from "./Components/Collage";
 function App() {
   return (
     <Router>
-      <div>
-        <header>
-          <Link to="/">
-            <div className="nav-bar-name">Brianna Cerkiewicz</div>
-          </Link>
-          <nav className="nav-bar">
-            <ul>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/books">Books</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <Banner />
-        {/* <Collage /> */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/books">
-            <Books />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <About />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/books">
+          <Books />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/">
+          <Main />
+        </Route>
+      </Switch>
     </Router>
   );
 }
