@@ -15,7 +15,9 @@ function App() {
     <Router>
       <div>
         <header>
-          <div className="nav-bar-name">Brianna Cerkiewicz</div>
+          <Link to="/">
+            <div className="nav-bar-name">Brianna Cerkiewicz</div>
+          </Link>
           <nav className="nav-bar">
             <ul>
               <li>
@@ -31,7 +33,7 @@ function App() {
           </nav>
         </header>
         <Banner />
-        <Collage />
+        {/* <Collage /> */}
         <Switch>
           <Route path="/about">
             <About />
