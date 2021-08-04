@@ -8,18 +8,13 @@ const Bar: React.FC = () => {
     <nav className="nav-bar">
       <ul>
         <li>
-          <Link className={linkClass} to="/about">
-            About
+          <Link className={linkClass} to="/about+contact">
+            About + Contact
           </Link>
         </li>
         <li>
           <Link className={linkClass} to="/books">
             Books
-          </Link>
-        </li>
-        <li>
-          <Link className={linkClass} to="/contact">
-            Contact
           </Link>
         </li>
       </ul>

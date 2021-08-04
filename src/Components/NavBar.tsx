@@ -11,7 +11,6 @@ const NavBar: React.FC = () => {
         </Link>
         <Bar />
       </header>
-      <Banner />
     </>
   );
 };
