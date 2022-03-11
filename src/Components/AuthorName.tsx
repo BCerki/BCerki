@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
-
 type Props = {
   color: string;
 };
 
 const AuthorName: React.FC<Props> = (props: Props) => {
-  return <div className={`brianna ${props.color}`}>Brianna Cerkiewicz</div>;
+  return <h1 className={`brianna ${props.color}`}>Brianna Cerkiewicz</h1>;
 };
 export default AuthorName;

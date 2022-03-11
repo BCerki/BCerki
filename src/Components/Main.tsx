@@ -4,13 +4,8 @@ const Main: React.FC = () => {
   return (
     <body>
       <div className="landing">
-        {/* <img className="landing-image" src="Images/IMG_1024.jpg" /> */}
-
-        {/* <div className="centered"> */}
         <AuthorName color={"whitesmoke"} />
         <NavBar />
-        {/* <div className="author">Author</div> */}
-        {/* </div> */}
       </div>
     </body>
   );

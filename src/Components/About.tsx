@@ -1,6 +1,5 @@
 import NavBar from "./NavBar";
 import AuthorName from "./AuthorName";
-import Contact from "./Contact";
 import Banner from "./Banner";
 const About: React.FC = () => {
   return (

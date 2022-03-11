@@ -7,9 +7,14 @@ const Books: React.FC = () => {
       <NavBar />
       <div className="book">
         <div className="cover-div">
-          <img className="cover-image" src="Images/avalanche.jpg" />
+          <img
+            alt="Decorative cover."
+            className="cover-image"
+            src="Images/avalanche.jpg"
+          />
         </div>
         <div className="book-copy">
+          <h2>Avalanche</h2>
           When Andrea starts at a new high school in November, she doesn’t think
           she’s ever going to fit in. She’s behind in all her classes, she
           dresses like a middle-schooler, and she can’t tell if her classmates
@@ -22,9 +27,14 @@ const Books: React.FC = () => {
       </div>
       <div className="book">
         <div className="cover-div">
-          <img className="cover-image" src="Images/summercamp.jpg" />
+          <img
+            className="cover-image"
+            alt="Decorative cover."
+            src="Images/summercamp.jpg"
+          />
         </div>
         <div className="book-copy">
+          <h2>Summer Camp</h2>
           For Derek’s thirteenth birthday, his mom sends him to summer camp. But
           while Camp Rainbow has all the usual summer camp stuff—archery,
           scavenger hunts, and vegetable showdowns—there’s something
