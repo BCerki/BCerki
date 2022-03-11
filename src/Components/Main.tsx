@@ -1,17 +1,18 @@
-import Bar from "./Bar";
+import AuthorName from "./AuthorName";
+import NavBar from "./NavBar";
 const Main: React.FC = () => {
   return (
-    <>
+    <body>
       <div className="landing">
         {/* <img className="landing-image" src="Images/IMG_1024.jpg" /> */}
 
         {/* <div className="centered"> */}
-        <div className="brianna">Brianna Cerkiewicz</div>
+        <AuthorName color={"whitesmoke"} />
+        <NavBar />
         {/* <div className="author">Author</div> */}
-        <Bar />
         {/* </div> */}
       </div>
-    </>
+    </body>
   );
 };
 export default Main;

@@ -2,6 +2,8 @@ html,
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  background-color: whitesmoke;
+  height: auto;
 }
 
 code {
@@ -64,22 +66,26 @@ a.interior-nav-bar {
 }
 
 .banner-image {
-  max-width: 100vw;
-}
-
-.banner-image-opaque {
-  max-width: 100vw;
-  opacity: 0.5;
+  max-width: 981px;
 }
 
 .brianna {
+  padding-top: 1em;
   text-transform: lowercase;
   font-size: 4em;
   text-align: center;
-  text-shadow: 10px 10px 100px black;
-  color: whitesmoke;
+
   margin-bottom: 0.5em;
 }
+.whitesmoke {
+  text-shadow: 10px 10px 100px black;
+  color: whitesmoke;
+}
+
+.black {
+  color: black;
+}
+
 .author {
   font-weight: 500;
   font-size: 2em;
@@ -105,6 +111,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 4em;
 }
 
 ul {
@@ -112,6 +119,7 @@ ul {
   justify-content: space-around;
   list-style-type: none;
   margin: 0;
+  padding-inline-start: 0px;
 }
 li {
   display: block;
@@ -138,13 +146,14 @@ p {
 
 .book-grid {
   display: flex;
+  flex-direction: row;
 }
 
 .book {
   text-emphasis: none;
-  padding: 0 1em;
+  padding: 4em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .cover-div {
@@ -157,8 +166,83 @@ p {
 }
 
 .book-copy {
-  font-size: 1rem;
+  font-size: 1.1em;
+  padding: 0 4em;
 }
 .pub-date {
   font-weight: 500;
+  padding-top: 1em;
+}
+
+.column {
+  max-width: 981px;
+  background-color: white;
+}
+
+.about {
+  margin: auto;
+  height: 100vh;
+}
+
+.books {
+  margin: auto;
+  height: inherit;
+}
+
+.bio {
+  padding: 0 10em 0 10em;
+}
+
+div.credits {
+  padding: 10em 10em 0em 10em;
+  font-size: 0.75em;
+}
+
+p.credits {
+  text-align: center;
+  margin: 0;
+}
+
+@media only screen and (max-width: 981px) {
+  .banner-image {
+    max-width: 100vw;
+  }
+  .bio {
+    max-width: 75vw;
+    padding: 0;
+    margin: auto;
+  }
+  .column {
+    max-width: 100vw;
+  }
+  .about {
+    height: inherit;
+  }
+  .credits {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .book {
+    text-emphasis: none;
+    padding: 1em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-copy {
+    padding: 0;
+  }
+  div.credits {
+    padding: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .brianna {
+    font-size: 3em;
+  }
+  .book-copy {
+    padding: 0em;
+  }
 }
